@@ -1,6 +1,7 @@
 package com.prajwalhs.brushandroid
 
 import androidx.compose.runtime.Composable
+import com.prajwalhs.brushandroid.coroutinesflow.asyncawait.AsyncAwaitScreen
 import com.prajwalhs.brushandroid.coroutinesflow.launchbuilder.LaunchDemoScreen
 import com.prajwalhs.brushandroid.coroutinesflow.suspendfun.SuspendFunScreen
 
@@ -8,7 +9,7 @@ class Topics{
     val topics: List<Pair<String, @Composable () -> Unit>> = listOf(
         "1. suspend fun" to { SuspendFunScreen() },
         "2. launch {}" to { LaunchDemoScreen() },
-//        "3. async / await" to { AsyncAwaitScreen() },
+        "3. async / await" to { AsyncAwaitScreen() },
 //        "4. runBlocking" to { RunBlockingScreen() },
 //        "5. withContext" to { WithContextScreen() },
 //        "6. viewModelScope" to { ViewModelScopeScreen() },

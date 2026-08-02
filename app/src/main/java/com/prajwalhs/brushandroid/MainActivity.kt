@@ -1,6 +1,5 @@
 package com.prajwalhs.brushandroid
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,7 +54,11 @@ class MainActivity : ComponentActivity() {
                                 }
                             }
                         } else {
-                            Column(modifier = Modifier.fillMaxSize()) {
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxSize()
+                                    .padding(16.dp)
+                            ) {
                                 Button(onClick = { selected = null }) { Text("< Back to list") }
                                 topics[selected!!].second()
                             }
